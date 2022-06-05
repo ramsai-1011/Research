@@ -1,0 +1,135 @@
+Abstract- In this research work, an approach to develop a university campus in many ways using sensors is presrented. Research work try to figure out many cases related to enviromentaal and physical changes happening in the campus through sensors. The primary motive is to make prototype to implement it into real time to make our campus a smart campus.  Proposed work make use of super-sensors which would sense and detect the environmental and physical condtitions and report it in a website. These sensors enable us for more capability of collecting flexible data so that accordingly data can be processed.Also, this research work aims to deploy the proposed super-sensor system in a single class room of the campus.
+
+Keywords--- Arduino uno, Nodemcu ESP8266, IR sensor, LM35 sensor, LED, DC Fan.
+
+Introduction
+
+	We are trying to make our campus a smart campus which would be our headline objective. here, we are clear with the concept of smart campus where we mean to practically install sensors in such a way that it would report us about the motions happening Using IR sensor and measure tempearture change in the campus through the LM35. We Try to explore many possibilities of how infrastructure of a campus can be used by designing a prototype. At the begining we will try to find out the use cases what are necessary like sensors in the class rooms, groundsm library, auditoriumns, laboratories etc. To be precise in the whole campus.
+
+Kit Photo
+
+		Our plan is to manually place the sensors in the campus 
+which will include basketball, football, volleyball courts and 
+also in indoor stadium where other indoor facilities like 
+conference halls, classrooms, auditoriums, staffrooms and 
+board rooms. In outdoors of our campus, we would have 
+motion, temperature sensors and in the indoors like 
+class rooms and staff rooms we would have IR and temperature sensors. In common these small-scale 
+sensors will be widely disturbed, understated, insecure, 
+unpretentious, self-effacing too. These need to consume less 
+power in order to be economical and should have low 
+maintenance and their installation should be easy and they 
+must also be fast operating . In terms of privacy, no personal 
+data would be obtained.
+
+
+
+
+I Sensor Nodes
+
+A. Specifications 
+		Every single sensor is an analog sensor and nodemcu has only few analog reader so instead we use a arduino uno which accepts analog signals and process them into digital signlas which are provided to Nodemcu. Bascially nodemcu will transfer the data to the internet that is provided by arduino uno after processing it.
+		The arduino uno is the main power supply through which power is distributed to all the sensors and nodemcu. The output is taken through arduino through a LCD display and we will retrive the data from nodemcu through  a website call adafruit.
+   We use several daemon sevices to accumlate real time sensor values and the cache data from the local memory. The data is operated through the server using secure TCP/IP conncetion. generally every main module consists of two connecttion such as DC power suppy and wire internet conncectivity but in Nodemcu which consists of DC power supply and no wired ethernett is used instead Wi-Fi connectivity feature provides the nodemcu high reliability and portability.
+
+B. Benefits
+		In this section, we will clarify the pros and cons of supersensors which are huge sensor nodes that have enough capacity to do more than just provide value to the server. While more power will be used by fat nodes, the operating cost is low and the purchase will be less expensive, meaning that installation costs are lesser.
+		The most realistic benefit of using general purpose devices for supersensor nodes of the E-Campus infrastructure is that they can be remotely configured and reprogrammed, enabling us to restore the senses of the infrastructure by using existing sensors in a new way or replacing them with new sensors.
+
+
+Flow chart and Block diagram
+
+
+
+II Use cases
+
+
+In  this section, we outline a selection of use cases for the smart campus. We report which of these have been implemented alrady. The other are some cases which are developed by us in this project. Finally, complete content and organizational editing before formatting. 
+
+A Class monitoring
+		Several classes are filled with people like students, faculty 
+and others. In order to monitor the classes a node of our project 
+is designed such that it monitors all the classes in a campus. 
+Here, we use a PIR sensor which is also called a motion sensor 
+in order to monitor the movements in the class room . This 
+sensor detects these movements and reports to the main module 
+where all the data is gathered and further this data is processed 
+in order to have the desired result. 
+Basically, motion detection uses light sensors to detect 
+either the presence of infrared light emitted from a warm object 
+or absence of infrared light when an object interrupts a beam 
+emitted by another part of the device . A IR sensor is the 
+one which detects the infrared light radiated by a warm object. 
+It consists of pyro electric sensors which helps to introduce any 
+changes in their temperature into the electric signal. When the 
+infrared light strikes a crystal, it produces an electrical charge. 
+Thus, a IR sensor is used to detect presence of moving bodies 
+such as human beings within a detection area of range 
+approximately 14 meters.
+
+
+B. Temperature monitoring
+
+
+It is necessary that every class in a campus must be 
+monitored in order to make it as a smart campus infrastructure. 
+So here we introduce the temperature monitoring which retrieves 
+the temperature  value of each and every class 
+and also the readings of the campus atmosphere. It is important 
+to monitor temperature because in if the temperatures get to 
+extreme in classes it must be regulated by air conditioners. So, 
+to regulate these appliances under these circumstance temperature 
+monitoring is used. LM35 sensor is which is used to calculate 
+Temperature. 
+
+
+Adafruit website image
+
+
+
+
+
+Conclusions:
+We have defined the motive usage of super sensor built on economical nodemcu connected to arduinno. The super sensor node is presently being installed in the campus and to support the extended use cases. The sensor data is queried via website. We presently have deployed where the system include one node.Future work will focus on improving the model's accuracy and reducing the number of errors,and increase the number of sensors present in it. which could allow the system to be implemented in various types od appplication such as store positioning in shopping malls and smart museum.
+
+
+References:
+
+
+[1] K. Hentschel, D. Jacob, J. Singer and M. Chalmers, "Super sensors: Raspberry Pi Devices for Smart Campus Infrastructure," 2016 IEEE 4th International Conference on Future Internet of Things and Cloud (FiCloud), Vienna, 2016, pp. 58-62.
+[2] A. Rowe, M. E. Berges, G. Bhatia, E. Goldman, R. Rajkumar, J. H. Garrett, J. M. F. Moura, and L. Soibelman, “Sensor andrew: Large- scale campus-wide sensing and actuation,” IBM Journal of Research and Development, vol. 55, no. 1.2, pp. 6:1–6:14, 2011. 
+[3] O. Seppanen, W. J. Fisk, and Q. Lei, “Effect of temperature on task performance in office environment,” 2006.
+[4] P. Wargocki, D. P. Wyon, and P. O. Fanger, “Productivity is affected by the air quality in offices,” in Proc. Healthy Buildings, 2000, pp. 635–640. 
+[5] C.Beyroughy, E.K.Burke, D.Landa-Silva,B.McCollum, P.McMullan, and A. J. Parkes, “Towards improving the utilization of university teaching space,” Journal of the Operational Research Society, pp. 130– 143, 2009. 
+[6] Space Management Group, “Space utilisation: practice, performance and guidelines,” 2006.
+[7] Q. Huang, Z. Ge, and C. Lu, “Occupancy estimation in smart buildings using audio-processing techniques,” arXiv preprint arXiv:1602.08507, 2016. 
+[8] M. Satyanarayanan, “Pervasive computing: Vision and challenges,” Personal Communications, IEEE, vol. 8, no. 4, pp. 10–17, 2001. 
+[9] P. Saffo, “Sensors: the next wave of innovation,” Communications of the ACM, vol. 40, no. 2, pp. 92–98, 1997. 
+[10] C. Kyriazopoulou, “Smart city technologies and architectures: A literature review,” in Smart Cities and Green ICT Systems (SMARTGREENS), 2015 International Conference on, 2015, pp. 1–12. 
+[11] R. Szab´o, K. Farkas, M. Isp´any, A. A. Bencz´ur, N. B ´ atfai, P. Jeszenszky, S. Laki, A. V´agner, L. Koll´ar, C. Sidl´o, R. Besenczi, M. Smajda, G. K¨ov´er, T. Szincs´ak, T. K´adek, M. K´sa, A. Adamk´o, I. Lend´ak, B. Wiandt, T. Tom´as, A. Z. Nagy, and G. Feh´er, “Framework for smart city applications based on participatory sensing,” in Cognitive Infocommunications, IEEE 4th International Conference on, 2013, pp. 295–300.
+ [12] H. Kukka, V. Kostakos, T. Ojala, J. Ylipulli, T. Suopaj¨arvi, M. Jurmu, and S. Hosio, “This is not classified: everyday information seeking and encountering in smart urban spaces,” Personal and Ubiquitous Computing, vol. 17, no. 1, pp. 15–27, 2011. [15] S. Banerjee, D. Sethia, T. Mittal, U. Arora, and A. Chauhan, “Secure sensor node with Raspberry Pi,” in Multimedia, Signal Processing and Communication Technologies (IMPACT), 2013 International Conference on, 2013, pp. 26–30.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
